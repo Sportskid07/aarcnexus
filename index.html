@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AARC NEXUS — Premium Collection</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts: Cormorant Garamond + DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">AARC NEXUS</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Collection</a></li>
+        <li><a href="product-detail.html">Featured</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartToggle" aria-label="Open Cart">
+          <i class="fas fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">New Season 2026</p>
+      <h1 class="hero-title">Crafted for the<br /><em>Extraordinary</em></h1>
+      <p class="hero-sub">Premium goods for those who refuse to settle. <br />Timeless design. Uncompromising quality.</p>
+      <div class="hero-ctas">
+        <a href="products.html" class="btn btn-primary">Shop Collection</a>
+        <a href="#about" class="btn btn-ghost">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Free Shipping Over ₹5000</span>
+      <span class="dot">•</span>
+      <span>Handcrafted Excellence</span>
+      <span class="dot">•</span>
+      <span>30-Day Returns</span>
+      <span class="dot">•</span>
+      <span>Premium Materials</span>
+      <span class="dot">•</span>
+      <span>Free Shipping Over ₹5000</span>
+      <span class="dot">•</span>
+      <span>Handcrafted Excellence</span>
+      <span class="dot">•</span>
+      <span>30-Day Returns</span>
+      <span class="dot">•</span>
+      <span>Premium Materials</span>
+      <span class="dot">•</span>
+    </div>
+  </div>
+
+  <!-- ===== FEATURED PRODUCTS ===== -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Curated For You</p>
+        <h2 class="section-title">Featured Collection</h2>
+      </div>
+      <div class="products-grid">
+
+        <!-- Product Card 1 -->
+        <article class="product-card" data-id="1">
+          <a href="product-detail.html" class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <div class="product-img-icon"><i class="fas fa-gem"></i></div>
+              <span class="product-badge">New</span>
+            </div>
+            <div class="product-overlay">
+              <span>Quick View</span>
+            </div>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Accessories</p>
+            <h3 class="product-name"><a href="product-detail.html">Obsidian Cuff</a></h3>
+            <div class="product-footer">
+              <span class="product-price">₹4,299</span>
+              <!-- Shopify Buy Button Placeholder -->
+              <div class="shopify-buy-btn-placeholder" data-product-id="shopify-product-1">
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="1" data-name="Obsidian Cuff" data-price="4299">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 2 -->
+        <article class="product-card" data-id="2">
+          <a href="product-detail.html" class="product-img-wrap">
+            <div class="product-img-placeholder style-2">
+              <div class="product-img-icon"><i class="fas fa-ring"></i></div>
+              <span class="product-badge badge-sale">−20%</span>
+            </div>
+            <div class="product-overlay">
+              <span>Quick View</span>
+            </div>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Jewellery</p>
+            <h3 class="product-name"><a href="product-detail.html">Aurelia Ring</a></h3>
+            <div class="product-footer">
+              <div>
+                <span class="product-price">₹6,799</span>
+                <span class="product-price-old">₹8,499</span>
+              </div>
+              <div class="shopify-buy-btn-placeholder" data-product-id="shopify-product-2">
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="2" data-name="Aurelia Ring" data-price="6799">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 3 -->
+        <article class="product-card" data-id="3">
+          <a href="product-detail.html" class="product-img-wrap">
+            <div class="product-img-placeholder style-3">
+              <div class="product-img-icon"><i class="fas fa-watch"></i></div>
+            </div>
+            <div class="product-overlay">
+              <span>Quick View</span>
+            </div>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Timepieces</p>
+            <h3 class="product-name"><a href="product-detail.html">Noir Chronos</a></h3>
+            <div class="product-footer">
+              <span class="product-price">₹18,499</span>
+              <div class="shopify-buy-btn-placeholder" data-product-id="shopify-product-3">
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="3" data-name="Noir Chronos" data-price="18499">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 4 -->
+        <article class="product-card" data-id="4">
+          <a href="product-detail.html" class="product-img-wrap">
+            <div class="product-img-placeholder style-4">
+              <div class="product-img-icon"><i class="fas fa-glasses"></i></div>
+              <span class="product-badge">Bestseller</span>
+            </div>
+            <div class="product-overlay">
+              <span>Quick View</span>
+            </div>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Eyewear</p>
+            <h3 class="product-name"><a href="product-detail.html">Eclipse Frames</a></h3>
+            <div class="product-footer">
+              <span class="product-price">₹9,999</span>
+              <div class="shopify-buy-btn-placeholder" data-product-id="shopify-product-4">
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="4" data-name="Eclipse Frames" data-price="9999">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="section-cta">
+        <a href="products.html" class="btn btn-outline">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT BRAND SECTION ===== -->
+  <section class="about-section" id="about">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-img-block">
+          <div class="about-img-inner">
+            <i class="fas fa-gem about-icon"></i>
+          </div>
+        </div>
+        <div class="about-stat-card">
+          <span class="stat-number">12+</span>
+          <span class="stat-label">Years of Craft</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-eyebrow">Our Philosophy</p>
+        <h2 class="section-title">Born from a Love<br />of <em>True Craft</em></h2>
+        <p class="about-text">AARC NEXUS was founded in 2013 with a single obsession: creating objects of extraordinary quality that stand apart from the disposable world. Every piece is conceived, refined, and produced with a discipline rarely seen in modern retail.</p>
+        <p class="about-text">We source only the finest materials — ethically, transparently, and with deep respect for the artisans who shape them.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <i class="fas fa-leaf"></i>
+            <span>Sustainable</span>
+          </div>
+          <div class="pillar">
+            <i class="fas fa-hand-sparkles"></i>
+            <span>Handcrafted</span>
+          </div>
+          <div class="pillar">
+            <i class="fas fa-shield-halved"></i>
+            <span>Lifetime Warranty</span>
+          </div>
+        </div>
+        <a href="products.html" class="btn btn-primary">Explore Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What People Say</p>
+        <h2 class="section-title">Worn & Loved</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The Obsidian Cuff is the most beautiful piece I own. The craftsmanship is flawless and the packaging feels like opening a gift to yourself."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <p class="author-name">Sanya Kapoor</p>
+              <p class="author-role">Mumbai, IN</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured-testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"I've purchased luxury goods from around the world. AARC NEXUS stands with the very best — quality, service, and soul all in one place."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div>
+              <p class="author-name">Rohan Mehta</p>
+              <p class="author-role">Bangalore, IN</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Received my Eclipse Frames within 2 days. The attention to detail is incredible. This is what premium truly looks like."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div>
+              <p class="author-name">Priya Nair</p>
+              <p class="author-role">Hyderabad, IN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-text">
+          <h3>Join the Inner Circle</h3>
+          <p>Early access to new drops, exclusive offers, and stories from the craft.</p>
+        </div>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">AARC NEXUS</a>
+          <p>Objects of desire, crafted for a life well-lived.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Bestsellers</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AARC NEXUS. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SLIDE-IN CART PANEL ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h3>Your Bag <span id="cartItemCount">(0)</span></h3>
+      <button class="cart-close" id="cartClose" aria-label="Close Cart"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty" id="cartEmpty">
+        <i class="fas fa-bag-shopping"></i>
+        <p>Your bag is empty</p>
+        <a href="products.html" class="btn btn-outline">Start Shopping</a>
+      </div>
+      <!-- Cart items rendered by JS -->
+      <ul class="cart-items-list" id="cartItemsList"></ul>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-totals">
+        <span>Subtotal</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <p class="cart-note">Shipping & taxes calculated at checkout</p>
+      <!-- Shopify Checkout Button Placeholder -->
+      <div class="shopify-checkout-placeholder" id="shopify-checkout">
+        <button class="btn btn-primary btn-full">Proceed to Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collection — AARC NEXUS</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">AARC NEXUS</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Collection</a></li>
+        <li><a href="product-detail.html">Featured</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartToggle" aria-label="Open Cart">
+          <i class="fas fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow">2026 Season</p>
+      <h1 class="page-hero-title">The Full Collection</h1>
+      <p class="page-hero-sub">Every piece — thoughtfully made.</p>
+    </div>
+  </div>
+
+  <!-- FILTERS + GRID -->
+  <section class="collection-section">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="accessories">Accessories</button>
+          <button class="filter-tab" data-filter="jewellery">Jewellery</button>
+          <button class="filter-tab" data-filter="timepieces">Timepieces</button>
+          <button class="filter-tab" data-filter="eyewear">Eyewear</button>
+        </div>
+        <div class="sort-wrap">
+          <select class="sort-select" id="sortSelect">
+            <option value="default">Sort: Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+
+        <article class="product-card" data-id="1" data-category="accessories" data-price="4299">
+          <a href="product-detail.html" class="product-img-wrap">
+            <div class="product-img-placeholder">
+              <div class="product-img-icon"><i class="fas fa-gem"></i></div>
+              <span class="product-badge">New</span>
+            </div>
+            <div class="product-overlay"><span>View Details</span></div>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Accessories</p>
+            <h3 class="product-name"><a href="product-detail.html">Obsidian Cuff</a></h3>
+            <div class="product-footer">
+              <span class="product-price">₹4,299</span>
+              <div class="shopify-buy-btn-placeholder" data-product-id="shopify-product-1">
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="1" data-name="Obsidian Cuff" data-price="4299">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="2" data-category="jewellery" data-price="6799">
+          <a href="product-detail.html" class="product-img-wrap">
+            <div class="product-img-placeholder style-2">
+              <div class="product-img-icon"><i class="fas fa-ring"></i></div>
+              <span class="product-badge badge-sale">−20%</span>
+            </div>
+            <div class="product-overlay"><span>View Details</span></div>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Jewellery</p>
+            <h3 class="product-name"><a href="product-detail.html">Aurelia Ring</a></h3>
+            <div class="product-footer">
+              <div>
+                <span class="product-price">₹6,799</span>
+                <span class="product-price-old">₹8,499</span>
+              </div>
+              <div class="shopify-buy-btn-placeholder" data-product-id="shopify-product-2">
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="2" data-name="Aurelia Ring" data-price="6799">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="3" data-category="timepieces" data-price="18499">
+          <a href="product-detail.html" class="product-img-wrap">
+            <div class="product-img-placeholder style-3">
+              <div class="product-img-icon"><i class="fas fa-watch"></i></div>
+            </div>
+            <div class="product-overlay"><span>View Details</span></div>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Timepieces</p>
+            <h3 class="product-name"><a href="product-detail.html">Noir Chronos</a></h3>
+            <div class="product-footer">
+              <span class="product-price">₹18,499</span>
+              <div class="shopify-buy-btn-placeholder" data-product-id="shopify-product-3">
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="3" data-name="Noir Chronos" data-price="18499">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="4" data-category="eyewear" data-price="9999">
+          <a href="product-detail.html" class="product-img-wrap">
+            <div class="product-img-placeholder style-4">
+              <div class="product-img-icon"><i class="fas fa-glasses"></i></div>
+              <span class="product-badge">Bestseller</span>
+            </div>
+            <div class="product-overlay"><span>View Details</span></div>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Eyewear</p>
+            <h3 class="product-name"><a href="product-detail.html">Eclipse Frames</a></h3>
+            <div class="product-footer">
+              <span class="product-price">₹9,999</span>
+              <div class="shopify-buy-btn-placeholder" data-product-id="shopify-product-4">
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="4" data-name="Eclipse Frames" data-price="9999">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="5" data-category="accessories" data-price="3499">
+          <a href="product-detail.html" class="product-img-wrap">
+            <div class="product-img-placeholder style-5">
+              <div class="product-img-icon"><i class="fas fa-briefcase"></i></div>
+            </div>
+            <div class="product-overlay"><span>View Details</span></div>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Accessories</p>
+            <h3 class="product-name"><a href="product-detail.html">Velour Cardholder</a></h3>
+            <div class="product-footer">
+              <span class="product-price">₹3,499</span>
+              <div class="shopify-buy-btn-placeholder" data-product-id="shopify-product-5">
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="5" data-name="Velour Cardholder" data-price="3499">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="6" data-category="jewellery" data-price="11200">
+          <a href="product-detail.html" class="product-img-wrap">
+            <div class="product-img-placeholder style-6">
+              <div class="product-img-icon"><i class="fas fa-star"></i></div>
+              <span class="product-badge">Limited</span>
+            </div>
+            <div class="product-overlay"><span>View Details</span></div>
+          </a>
+          <div class="product-info">
+            <p class="product-category">Jewellery</p>
+            <h3 class="product-name"><a href="product-detail.html">Solstice Pendant</a></h3>
+            <div class="product-footer">
+              <span class="product-price">₹11,200</span>
+              <div class="shopify-buy-btn-placeholder" data-product-id="shopify-product-6">
+                <button class="btn btn-sm btn-primary add-to-cart" data-id="6" data-name="Solstice Pendant" data-price="11200">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Load More -->
+      <div class="section-cta">
+        <button class="btn btn-outline" id="loadMoreBtn">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">AARC NEXUS</a>
+          <p>Objects of desire, crafted for a life well-lived.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Bestsellers</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AARC NEXUS. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART PANEL -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h3>Your Bag <span id="cartItemCount">(0)</span></h3>
+      <button class="cart-close" id="cartClose" aria-label="Close Cart"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty" id="cartEmpty">
+        <i class="fas fa-bag-shopping"></i>
+        <p>Your bag is empty</p>
+        <a href="products.html" class="btn btn-outline">Start Shopping</a>
+      </div>
+      <ul class="cart-items-list" id="cartItemsList"></ul>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-totals">
+        <span>Subtotal</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <p class="cart-note">Shipping & taxes calculated at checkout</p>
+      <div class="shopify-checkout-placeholder" id="shopify-checkout">
+        <button class="btn btn-primary btn-full">Proceed to Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
